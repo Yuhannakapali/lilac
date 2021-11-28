@@ -1,9 +1,9 @@
 const Discord = require("discord.js")
+require('dotenv').config()
 const keepAlive = require("./server")
 const client = new Discord.Client()
-const { interpretMessage } = require("./interpretation")
 const { haveConversation } = require("./conversation")
-const sadWords = ["sad", "depressed", "unhappy", "angry"]
+const token = process.env.TOKEN
 
 client.once("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`)
@@ -19,4 +19,4 @@ client.on("message", msg => {
     // interpretMessage(msg);
 })
 keepAlive()
-client.login("OTEzNzc1MDI5ODkwNzQwMjc0.YaDZUA.0-e3TDWNdGuW2w8FoeE24yyCV0s")
+client.login(token)
