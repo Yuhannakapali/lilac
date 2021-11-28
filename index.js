@@ -19,4 +19,4 @@ client.on("message", msg => {
     // interpretMessage(msg);
 })
 keepAlive()
-client.login("OTEzNzc1MDI5ODkwNzQwMjc0.YaDZUA.EKVuaXhZUJu6t8nkQeHCWdR2fMk")
+client.login("OTEzNzc1MDI5ODkwNzQwMjc0.YaDZUA.0-e3TDWNdGuW2w8FoeE24yyCV0s")
