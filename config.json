@@ -1,5 +1,6 @@
 {
 	"clientId": "123456789012345678",
 	"guildId": "876543210987654321",
-	"token": "OTEzNzc1MDI5ODkwNzQwMjc0.YaDZUA.YYcBuQCOfBHsm1BxEdH03tzcTz8"
+	"token": "OTEzNzc1MDI5ODkwNzQwMjc0.YaDZUA.YYcBuQCOfBHsm1BxEdH03tzcTz8",
+	"openAiToken" : "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"
 }
