@@ -4,6 +4,7 @@ const keepAlive = require("./server")
 const client = new Discord.Client()
 const { haveConversation } = require("./conversation")
 const token = process.env.TOKEN
+console.log("🚀 ~ file: index.js ~ line 7 ~ token", token)
 
 client.once("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`)
