@@ -1,10 +1,9 @@
-// const axios = require('axios');
 const OpenAI = require('openai-api');
 
 
 let chatLog = 'Human: who are you? \n AI:  I am Ryu, \n Human:where do you work? \n AI: I work at anicafe\n Human: do you have girlfriend? \n AI: yes, her name is Anah\n Human: do you fuck her ?\n AI: everyday.\n';
 
-const OPENAI_API_KEY = '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';
+const OPENAI_API_KEY = process.env.AITOKEN;
 
 const openai = new OpenAI(OPENAI_API_KEY);
 

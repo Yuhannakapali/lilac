@@ -25,12 +25,11 @@ const interpretMessage = (msg) => {
             msg.channel.send(quote)
         )
     }
-
-    if (msg.content.includes("sad")) {
-        const rand = randomIntFromInterval(0, sad.length - 1)
-        const response = sad[rand]
-        msg.channel.send(response)
-    }
+    // if (msg.content.includes("sad")) {
+    //     const rand = randomIntFromInterval(0, sad.length - 1)
+    //     const response = sad[rand]
+    //     msg.channel.send(response)
+    // }
 }
 module.exports = {
     interpretMessage
