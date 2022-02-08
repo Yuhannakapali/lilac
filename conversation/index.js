@@ -9,7 +9,8 @@ const openai = new OpenAI(OPENAI_API_KEY);
 
 async function haveConversation(msg) {
     const question = `${msg.content.substring(msg.content.indexOf(">") + 1)} \n`;
-    const prompt = `${chatLog}Human: ${question}`;
+    const sanitizedQuestion = clean(question);
+    const prompt = `${chatLog}Human: ${sanitizedQuestion}`;
     const gptResponse = await openai.complete({
         engine: 'davinci',
         prompt,
@@ -29,6 +30,9 @@ async function haveConversation(msg) {
 
 }
 
+function clean(str) {
+    return str.replace(/[^0-9a-z-A-Z ]/g, "").replace(/ +/, " ")
+}
 
 module.exports = {
     haveConversation,
